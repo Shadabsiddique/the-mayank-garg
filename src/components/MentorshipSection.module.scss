@@ -1,0 +1,46 @@
+/* components/MentorshipSection.module.scss */
+
+.mentorship {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-evenly;
+    padding: 2rem;
+  
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+  
+  .mentorshipImage {
+    flex: 1;
+    max-width: 400px;
+
+  .mentorshipMainImage{
+    border-radius: 8px;
+
+  }
+    
+    Image {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .mentorshipText {
+    flex: 2;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 630px;
+    
+  
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+  

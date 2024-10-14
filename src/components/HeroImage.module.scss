@@ -1,0 +1,87 @@
+.heroContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imageOverlay {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.statsContainer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 1200px;
+  color: white;
+  flex-wrap: wrap; /* Allows the items to wrap on smaller screens */
+  text-align: center; /* Centers text inside each stat */
+}
+
+.stat {
+  flex: 1; /* Each stat will take up equal space */
+  min-width: 100px;
+  margin: 10px;
+}
+
+.stat h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.stat p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .stat h2 {
+    font-size: 1rem; /* Adjusts heading font size for smaller screens */
+  }
+
+  .stat p {
+    font-size: 0.7rem; /* Adjusts paragraph font size */
+  }
+
+  .statsContainer {
+    flex-direction: column; /* Stacks the stats vertically on small screens */
+    align-items: center; /* Centers the stats in column layout */
+    width: 100%; /* Expands the stats container to full width */
+    padding: 0 20px; /* Adds padding around the container */
+  }
+}
+
+@media (max-width: 480px) {
+  .stat h2 {
+    font-size: 1rem; /* Further adjusts heading size for very small screens */
+  }
+
+  .stat p {
+    font-size: 0.6rem; /* Further adjusts paragraph font size */
+  }
+
+  .statsContainer {
+    bottom: 0px; /* Reduces bottom spacing on very small screens */
+  }
+  .heroContainer {
+    padding-top: 75px;
+  }
+}

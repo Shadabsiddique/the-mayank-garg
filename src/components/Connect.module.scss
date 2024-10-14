@@ -1,0 +1,20 @@
+
+.connect-container {
+    background: linear-gradient(180deg, #0D0920 25.5%, #362686 100%);
+    padding: 40px; /* Add padding for spacing */
+    display: flex; /* Use flexbox for column layout */
+    flex-direction: column; /* Align children in a vertical column */
+    gap: 20px; /* Add space between the divs */
+  }
+  
+  .banner-wrapper {
+    margin-bottom: 20px; /* Add margin to separate banner from cards */
+  }
+  
+  .card-group {
+    display: flex;
+    gap: 20px; /* Add space between cards */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: center; /* Center cards horizontally */
+  }
+  
